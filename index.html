@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+
+  <body>
+    <main class="result-card" aria-label="Results summary component">
+      <!-- Result Section -->
+
+      <section class="result" aria-labelledby="result-heading">
+        <h1 id="result-heading">Your Result</h1>
+        <div class="score-circle" aria-label="Score 76 out of 100">
+          <span class="score">76</span>
+          <span class="total">of 100</span>
+        </div>
+        <h2>Great</h2>
+        <p class="result-description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+
+      <!-- Summary Section -->
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" class="summary-title">Summary</h2>
+        <div id="summary-list" aria-live="polite"></div>
+        <button class="continue-btn" type="button">Continue</button>
+      </section>
+    </main>
+
+    <!-- <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Aryan Lodha</a>.
+    </footer> -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
