@@ -202,7 +202,7 @@ button {
 .summary h2 {
   font-size: var(--fs-lg);
 
-  font-weight: 800;
+  font-weight: 700;
 }
 #summary-list {
   display: flex;
