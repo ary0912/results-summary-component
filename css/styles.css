@@ -67,10 +67,11 @@
 
 html {
   font-size: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
 
   font-family: var(--ff-primary);
 
@@ -322,10 +323,11 @@ button:focus-visible {
 @media (max-width: 767px) {
   body {
     padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   .result-card {
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .result {
@@ -352,6 +354,7 @@ button:focus-visible {
 
   .summary-item {
     padding: 0.875rem 1rem;
+    min-height: 3.5rem;
   }
 
   .continue-btn {
