@@ -75,7 +75,7 @@ body {
 
   font-family: var(--ff-primary);
 
-  background-color: var(--clr-pale-blue);
+  background-color: var(--clr-white);
 
   color: var(--clr-slate-blue);
 
@@ -86,6 +86,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 img {
   display: block;
@@ -294,11 +295,6 @@ button {
   transform: translateY(-1px);
 }
 
-.continue-btn:focus-visible {
-  outline: 3px solid var(--clr-blue);
-  outline-offset: 4px;
-}
-
 .error-message {
   color: var(--clr-red);
 
@@ -322,12 +318,16 @@ button:focus-visible {
 
 @media (max-width: 767px) {
   body {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--clr-white);
     padding: 0;
     padding-bottom: env(safe-area-inset-bottom);
   }
 
   .result-card {
-    min-height: 100dvh;
+    width: 100%;
+    background: var(--clr-white);
   }
 
   .result {
@@ -364,6 +364,7 @@ button:focus-visible {
 
 @media (min-width: 768px) {
   body {
+    background-color: var(--clr-pale-blue);
     justify-content: center;
     align-items: center;
 
